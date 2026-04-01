@@ -1,0 +1,47 @@
+//Score code
+
+{
+  "name": "Score",
+  "type": "object",
+  "properties": {
+    "player_name": {
+      "type": "string",
+      "description": "Display name of the player"
+    },
+    "player_email": {
+      "type": "string",
+      "description": "Email of the player"
+    },
+    "points": {
+      "type": "number",
+      "description": "Points earned"
+    },
+    "level": {
+      "type": "number",
+      "description": "Level completed"
+    },
+    "difficulty": {
+      "type": "string",
+      "enum": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "description": "Difficulty of the puzzle"
+    },
+    "time_seconds": {
+      "type": "number",
+      "description": "Time taken in seconds"
+    },
+    "total_score": {
+      "type": "number",
+      "description": "Cumulative total score for the player"
+    }
+  },
+  "required": [
+    "player_name",
+    "points",
+    "level",
+    "difficulty"
+  ]
+}
